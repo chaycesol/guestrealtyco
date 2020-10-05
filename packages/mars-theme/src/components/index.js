@@ -2,12 +2,13 @@ import React from "react";
 import { Global, css, connect, styled, Head } from "frontity";
 import Switch from "@frontity/components/switch";
 import Header from "./header";
+import Footer from "./Footer";
 import List from "./list";
 import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
-
+import style from "./styles/style.css";
 /**
  * Theme is the root React component of our theme. The one we will export
  * in roots.
@@ -28,6 +29,7 @@ const Theme = ({ state }) => {
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
       <Global styles={globalStyles} />
+      <Global styles={css(style)} />
 
       {/* Add the header of the site. */}
       <HeadContainer>
@@ -44,6 +46,9 @@ const Theme = ({ state }) => {
           <PageError when={data.isError} />
         </Switch>
       </Main>
+      <FooterContainer>
+        <Footer />
+      </FooterContainer>
     </>
   );
 };
@@ -67,7 +72,7 @@ const HeadContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #1f38c5;
+  background-color: #f6f2ec;
 `;
 
 const Main = styled.div`
@@ -79,3 +84,11 @@ const Main = styled.div`
     rgba(66, 174, 228, 0)
   );
 `;
+
+
+const FooterContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f2ec;
+`

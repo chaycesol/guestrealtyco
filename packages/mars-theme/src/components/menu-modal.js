@@ -20,13 +20,15 @@ const MenuModal = ({ state }) => {
               {name}
             </MenuLink>
           ))}
+              <button className="button btn-light">Call us</button>
+              <button className="button btn-dark">Book Now</button>
       </MenuContent>
     </>
   );
 };
 
 const MenuOverlay = styled.div`
-  background-color: #1f38c5;
+  background-color: #f6f2ec;
   width: 100vw;
   height: 100vh;
   overflow: hidden auto;
@@ -38,6 +40,10 @@ const MenuOverlay = styled.div`
 
 const MenuContent = styled.div`
   z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const MenuLink = styled(Link)`
@@ -54,7 +60,7 @@ const MenuLink = styled(Link)`
   }
   /* styles for active link */
   &[aria-current="page"] {
-    color: yellow;
+    color: #013110;
     font-weight: bold;
     /* border-bottom: 4px solid yellow; */
   }

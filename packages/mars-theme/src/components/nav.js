@@ -21,6 +21,8 @@ const Nav = ({ state }) => (
         </NavItem>
       );
     })}
+    <button className="button btn-light">Call Us</button>
+    <button className="button btn-dark">Book Now</button>
   </NavContainer>
 );
 
@@ -29,6 +31,8 @@ export default connect(Nav);
 const NavContainer = styled.nav`
   list-style: none;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 848px;
   max-width: 100%;
   box-sizing: border-box;
@@ -44,8 +48,9 @@ const NavContainer = styled.nav`
 const NavItem = styled.div`
   padding: 0;
   margin: 0 16px;
-  color: #fff;
-  font-size: 0.9em;
+  color: #013110;
+  font-size: 1rem;
+  font-weight: 550;
   box-sizing: border-box;
   flex-shrink: 0;
 
@@ -56,7 +61,8 @@ const NavItem = styled.div`
     border-bottom-color: transparent;
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
-      border-bottom-color: #fff;
+      border-bottom-color: #e0c25e;
+      font-weight: 750;
     }
   }
 

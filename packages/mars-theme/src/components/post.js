@@ -31,8 +31,7 @@ const Post = ({ state, actions, libraries }) => {
   return data.isReady ? (
     <Container>
       <div>
-        <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-
+        {/* <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} /> */}
         {/* Only display author and date on posts */}
         {data.isPost && (
           <div>
@@ -68,11 +67,203 @@ const Post = ({ state, actions, libraries }) => {
 export default connect(Post);
 
 const Container = styled.div`
-  width: 800px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
   margin: 0;
-  padding: 24px;
-`;
-
+    .directions{
+      display: none;
+    }
+    #bar2{
+      height: 5px;
+      width: 25%;
+      background-color: #DBC472;
+    }
+    #bar{
+      height: 5px;
+      width: 40%;
+      background-color: #DBC472;
+    }
+    .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100vw;
+    overflow: hidden;
+    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/1600/900");
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/1600/900"); /* The least supported option. */
+    }
+    img {
+      object-fit: cover;
+    }
+    .hero-header-text{
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-header{
+      font-style: normal;
+      font-weight: 800;
+      font-size: 4rem;
+      line-height: 80px;
+      /* identical to box height, or 143% */
+      text-align: center;
+      letter-spacing: -0.015em;
+      color: #f6f2ec;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .sub-hero{
+      background-color: #f6f2ec;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+        .sub-header{
+          margin-left: 10px;
+          h2{
+          color: #013110;
+          font-size: 2.5em;
+          font-weight: 600;
+          }
+          h4{
+            font-size: 1.5rem;
+            color: #013110;
+          }
+      }
+      .sub-content{
+      background-color: #f6f2ec;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+        .sub-text{
+          background-color: #f6f2ec;
+          width: 40%;
+          h3{
+            color: #013110
+          }
+          p{
+            color: #000;
+          }
+        }
+      }
+    }
+    .body1{
+      background-color: #013110;
+      .body1-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: #c1ab22; 
+        .body1-img{
+          height: 625px;
+          width: 55%;
+          background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/800/650");
+          background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/800/650"); /* The least supported option. */
+        }
+        }
+        .body1-text{
+          width: 45%;
+          margin-left: 20px;
+          padding-left: 20px;
+          h3{
+          font-size: 2.5rem;
+          color: #e0c25e;
+          }
+          p{
+            color: #DBDBB6;
+          }
+          .body1-points{
+            display: flex;
+            flex-direction: column;
+            .body1-point{
+              display: flex;
+              flex-direction: row;
+              padding: 10px;
+              img{
+                width: auto;
+                height: 100%;
+              }
+              p{
+                padding: 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .benefits{
+      display: flex;
+      flex-direction: column;
+      background-color: #f6f2ec;
+    }
+    .benefits-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        color: #013110;
+      }
+      .benefits-content{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+      }
+      .reviews{
+        display: flex;
+        flex-direction: row;
+        background-color: #f6f2ec;
+        .reviews-content{
+          width: 40%;
+          margin: 10px;
+          padding: 5%;
+          .reviews-header{
+            h2{
+              color: #013110;
+              font-size: 2rem;
+            }
+            p{
+              color: #000;
+            }
+          }
+          .reviews-logos{
+            display: flex;
+            flex-direction: row;
+          }
+        }
+        .reviews-featured{
+          width: 40%;
+          margin: 5%;
+          padding: 5%;
+          h3{
+            color: #013110;
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .signup{
+        background-color: #013110;
+        padding: 40px;
+        .signup-container{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: space-between;
+          .signup-text{
+            font-size: 1.2rem;
+            color: #DBDBB6;
+          }
+          .signup-buttons{
+            display: flex;
+            flex-direction: row;
+          }
+        }
+      }
+`
 const Title = styled.h1`
   margin: 0;
   margin-top: 24px;
@@ -161,7 +352,7 @@ const Content = styled.div`
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
-    background-color: #fff;
+    background-color: #f6f2ec;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 4px;

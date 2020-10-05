@@ -8,13 +8,17 @@ const Header = ({ state }) => {
   return (
     <>
       <Container>
+        <TitleContainer>
         <StyledLink link="/">
           <Title>{state.frontity.title}</Title>
         </StyledLink>
-        <Description>{state.frontity.description}</Description>
-        <MobileMenu />
+        </TitleContainer>
+        <NavContainer>
+          <MobileMenu />
+          <Nav />
+        </NavContainer>
       </Container>
-      <Nav />
+      
     </>
   );
 };
@@ -24,24 +28,36 @@ export default connect(Header);
 
 const Container = styled.div`
   width: 848px;
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   padding: 24px;
-  color: #fff;
+  font-family: "montserrat";
+  color: #013110;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 `;
+
+const TitleContainer = styled.div`
+ width: 25%;
+ height: auto;
+`
 
 const Title = styled.h2`
   margin: 0;
   margin-bottom: 16px;
-`;
+  color: #013110;
+`
 
-const Description = styled.h4`
-  margin: 0;
-  color: rgba(255, 255, 255, 0.7);
-`;
+const NavContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
