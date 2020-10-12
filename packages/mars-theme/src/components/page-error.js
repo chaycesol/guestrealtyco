@@ -1,12 +1,14 @@
 import React from "react";
 import { styled, connect } from "frontity";
+import Link from "./link";
 
 const description404 = (
   <>
     That page can’t be found{" "}
     <span role="img" aria-label="confused face">
-      😕
+      😕 
     </span>
+    
   </>
 );
 
@@ -29,6 +31,9 @@ const Page404 = ({ state }) => {
     <Container>
       <Title>{data.is404 ? title404 : title}</Title>
       <Description>{data.is404 ? description404 : description}</Description>
+      <StyledLink link="/">
+         Return To Home
+      </StyledLink>
     </Container>
   );
 };
@@ -40,6 +45,11 @@ const Container = styled.div`
   margin: 0;
   padding: 24px;
   text-align: center;
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-weight: 800;
 `;
 
 const Title = styled.h1`
@@ -55,3 +65,4 @@ const Description = styled.div`
   color: rgba(12, 17, 43, 0.8);
   margin: 24px 0;
 `;
+

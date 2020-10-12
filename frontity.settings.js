@@ -3,8 +3,8 @@ const settings = {
   "state": {
     "frontity": {
       "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "title": "Guest Realty",
+      "description": "Guest Realty is a Vacation and Residential Short-Term Long-Term Property Management Sydney Bondi Beach Australia"
     }
   },
   "packages": [
@@ -18,20 +18,20 @@ const settings = {
               "/"
             ],
             [
-              "Nature",
-              "/category/nature/"
+              "About",
+              "/about/about/"
             ],
             [
-              "Travel",
-              "/category/travel/"
+              "For Property Owners",
+              "/owners/"
             ],
             [
-              "Japan",
-              "/tag/japan/"
+              "For Renters",
+              "/renters/"
             ],
             [
-              "About Us",
-              "/about-us/"
+              "Blog",
+              "/blog/"
             ]
           ],
           "featured": {
@@ -45,7 +45,8 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://test.frontity.org/wp-json"
+          "api": "http://guestrealty.co/wp-json",
+          "homepage": "/home",
         }
       }
     },

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Common Styles */
+/* Buttons */
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .button{
+    height: 52px;
+    width: 192px;
+    border-radius: 6px;
+    margin: 10px;
+    font-weight: 600;
+    
+  }
+  .btn-dark{
+    background: #013110;
+    color: #f6f2ec;
+    border: 2px solid #013110;
+  }
+  .btn-gold-dark{
+    background: #e0c25e;
+    color: #013110;
+    border: 2px solid #e0c25e;
+    
+  }    
+  .btn-light{
+    background: transparent;
+    color: #013110;
+    border: 2px solid #013110;
+  }
+  .btn-gold-light{
+    background: transparent;
+    color: #e0c25e;
+    border: 2px solid #e0c25e;
+  }
+
+
+  /* Other Global Styles */
+  #logo{
+    background-color: gray;
+    height: 75px;
+    width: 175px;
+    margin: 5px;
+    width: 25%;
+  }
