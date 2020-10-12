@@ -2,7 +2,7 @@ const settings = {
   "name": "guestrealtyco",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
+      "url": "http://guestrealty.co",
       "title": "Guest Realty",
       "description": "Guest Realty is a Vacation and Residential Short-Term Long-Term Property Management Sydney Bondi Beach Australia"
     }

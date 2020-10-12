@@ -2,43 +2,14 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "05561fee6959ca9dd06c",
+  "hash": "8671bf3b70475dd29a9a",
   "publicPath": "/static/",
   "outputPath": "/Users/chaycesolchaga/Desktop/SocialStoryCo/guestrealtyco/build/static",
   "assetsByChunkName": {
-    "guestrealtyco": [
-      "guestrealtyco.module.js",
-      "guestrealtyco.8466e46c14862664bdd9.hot-update.js"
-    ],
+    "guestrealtyco": "guestrealtyco.module.js",
     "list": "list.module.js"
   },
   "assets": [
-    {
-      "name": "8466e46c14862664bdd9.hot-update.json",
-      "size": 55,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
-      "name": "guestrealtyco.8466e46c14862664bdd9.hot-update.js",
-      "size": 13503,
-      "chunks": [
-        "guestrealtyco"
-      ],
-      "chunkNames": [
-        "guestrealtyco"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
     {
       "name": "guestrealtyco.module.js",
       "size": 5193954,
@@ -49,7 +20,8 @@
         "guestrealtyco"
       ],
       "info": {},
-      "emitted": false
+      "emitted": false,
+      "isOverSizeLimit": true
     },
     {
       "name": "list.module.js",
@@ -71,8 +43,7 @@
         "guestrealtyco"
       ],
       "assets": [
-        "guestrealtyco.module.js",
-        "guestrealtyco.8466e46c14862664bdd9.hot-update.js"
+        "guestrealtyco.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -84,8 +55,7 @@
         "guestrealtyco"
       ],
       "assets": [
-        "guestrealtyco.module.js",
-        "guestrealtyco.8466e46c14862664bdd9.hot-update.js"
+        "guestrealtyco.module.js"
       ],
       "children": {},
       "childAssets": {}
