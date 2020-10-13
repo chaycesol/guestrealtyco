@@ -1,6 +1,7 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
+import greenLogo from "../assets/logo/greenLogo.png";
 
 /**
  * Navigation Component
@@ -17,7 +18,7 @@ const FooterNav = ({ state }) => {
               <StyledLink link="/owners">
                 For Property Owners
               </StyledLink>
-              <FooterLogo></FooterLogo>
+              <FooterLogo><a href="/"><img src={greenLogo} alt="logo"/></a></FooterLogo>
               <StyledLink link="/renters">
                 For Renters
               </StyledLink>
@@ -36,7 +37,7 @@ export default connect(FooterNav);
 const NavContainer = styled.nav`
   list-style: none;
   display: flex;
-  align-items: center
+  align-items: center;
   justify-content: center;
   width: 100%;
   box-sizing: border-box;
@@ -49,9 +50,12 @@ const NavContainer = styled.nav`
 `;
 
 const FooterLogo = styled.div`
-  background-color: gray;
-  height: 75px;
-  width: 75px;
+  height: 70px;
+  width: 70px;
+  img{
+    height: 70px;
+    width: 70px;
+  }
 `
 
 const LinkContainer = styled.div`

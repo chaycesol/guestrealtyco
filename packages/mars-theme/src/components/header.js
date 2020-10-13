@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import Nav from "./nav";
 import MobileMenu from "./menu";
+import greenLogo from "../assets/logo/greenLogo.png";
 
 const Header = ({ state }) => {
   return (
@@ -10,7 +11,7 @@ const Header = ({ state }) => {
       <Container>
         <TitleContainer>
         <StyledLink link="/">
-          <Title>{state.frontity.title}</Title>
+        <HeaderLogo><img src={greenLogo} alt="logo"/></HeaderLogo>
         </StyledLink>
         </TitleContainer>
         <NavContainer>
@@ -36,22 +37,25 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 `;
 
 const TitleContainer = styled.div`
- width: 25%;
+ width: 10%;
  height: auto;
+ display: flex;
+ align-items: baseline;
 `
 
-const Title = styled.h2`
-  margin: 0;
-  margin-bottom: 16px;
-  color: #013110;
-`
+const HeaderLogo = styled.div`
+  img{
+    height: 90px;
+    width: 90px;
+  }
+  `
 
 const NavContainer = styled.div`
-  width: 100%;
+  width: 85%;
   display: flex;
   align-items: right;
   justify-content: flex-end;
