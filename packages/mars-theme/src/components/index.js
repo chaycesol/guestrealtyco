@@ -2,9 +2,9 @@ import React from "react";
 import { Global, css, connect, styled, Head } from "frontity";
 import Switch from "@frontity/components/switch";
 import Header from "./header";
-import Sub from "./Sub";
 import Footer from "./Footer";
 import List from "./list";
+import Sub from "./Sub";
 import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
@@ -46,7 +46,6 @@ const Theme = ({ state }) => {
           <Sub when={data.isSub} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
-          
         </Switch>
       </Main>
       <FooterContainer>

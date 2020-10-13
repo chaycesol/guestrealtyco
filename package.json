@@ -23,6 +23,6 @@
     "@frontity/tiny-router": "^1.2.2",
     "@frontity/wp-source": "^1.9.1",
     "frontity": "^1.12.0",
-    "guestrealty": "file:packages/guestrealty"
+    "frontity-contact-form-7": "^0.1.7"
   }
 }
