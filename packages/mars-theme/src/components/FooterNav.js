@@ -7,7 +7,7 @@ import greenLogo from "../assets/logo/greenLogo.png";
  * Navigation Component
  *
  * It renders the navigation links
- */
+ */ 
 const FooterNav = ({ state }) => {
       return (
         <NavContainer>
