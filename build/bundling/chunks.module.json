@@ -2,17 +2,46 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "8671bf3b70475dd29a9a",
+  "hash": "e9c2cca96977e941a031",
   "publicPath": "/static/",
   "outputPath": "/Users/chaycesolchaga/Desktop/SocialStoryCo/guestrealtyco/build/static",
   "assetsByChunkName": {
-    "guestrealtyco": "guestrealtyco.module.js",
+    "guestrealtyco": [
+      "guestrealtyco.module.js",
+      "guestrealtyco.5e1d112ac2f45e52d678.hot-update.js"
+    ],
     "list": "list.module.js"
   },
   "assets": [
     {
+      "name": "5e1d112ac2f45e52d678.hot-update.json",
+      "size": 55,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "guestrealtyco.5e1d112ac2f45e52d678.hot-update.js",
+      "size": 99239,
+      "chunks": [
+        "guestrealtyco"
+      ],
+      "chunkNames": [
+        "guestrealtyco"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "guestrealtyco.module.js",
-      "size": 5193954,
+      "size": 5304085,
       "chunks": [
         "guestrealtyco"
       ],
@@ -20,8 +49,15 @@
         "guestrealtyco"
       ],
       "info": {},
-      "emitted": false,
-      "isOverSizeLimit": true
+      "emitted": false
+    },
+    {
+      "name": "images/greenLogo.png",
+      "size": 7136,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
     },
     {
       "name": "list.module.js",
@@ -43,7 +79,8 @@
         "guestrealtyco"
       ],
       "assets": [
-        "guestrealtyco.module.js"
+        "guestrealtyco.module.js",
+        "guestrealtyco.5e1d112ac2f45e52d678.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -55,7 +92,8 @@
         "guestrealtyco"
       ],
       "assets": [
-        "guestrealtyco.module.js"
+        "guestrealtyco.module.js",
+        "guestrealtyco.5e1d112ac2f45e52d678.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

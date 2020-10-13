@@ -170,7 +170,7 @@ const Container = styled.div`
           padding-left: 20px;
           h3{
           font-size: 2.5rem;
-          color: #e0c25e;
+          color: #ccb25c;
           }
           p{
             color: #DBDBB6;
@@ -183,11 +183,11 @@ const Container = styled.div`
               flex-direction: row;
               padding: 10px;
               img{
-                width: auto;
-                height: 100%;
+                width: 90px;
+                height: 90px;
               }
               p{
-                padding: 4px;
+                padding-top: px;
               }
             }
           }
@@ -264,12 +264,7 @@ const Container = styled.div`
         }
       }
 `
-const Title = styled.h1`
-  margin: 0;
-  margin-top: 24px;
-  margin-bottom: 8px;
-  color: rgba(12, 17, 43);
-`;
+
 
 const StyledLink = styled(Link)`
   padding: 15px 0;

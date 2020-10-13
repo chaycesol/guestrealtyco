@@ -61,7 +61,7 @@ const NavItem = styled.div`
     border-bottom-color: transparent;
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
-      border-bottom-color: #e0c25e;
+      border-bottom-color: #ccb25c;
       font-weight: 750;
     }
   }

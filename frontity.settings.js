@@ -23,11 +23,11 @@ const settings = {
             ],
             [
               "For Property Owners",
-              "/owners/"
+              "/sub/property-owners/"
             ],
             [
               "For Renters",
-              "/renters/"
+              "/sub/for-renters/"
             ],
             [
               "Blog",
@@ -47,6 +47,19 @@ const settings = {
         "source": {
           "api": "http://guestrealty.co/wp-json",
           "homepage": "/home",
+          "postTypes": [
+            {
+              type: "sub",
+              endpoint: "sub"
+            }
+          ],
+          taxonomies: [
+            {
+              taxonomy: "subs",
+              endpoint: "sub",
+              postTypeEndpoint: "sub"
+            }
+          ]
         }
       }
     },

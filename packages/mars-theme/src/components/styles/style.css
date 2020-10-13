@@ -23,9 +23,9 @@
     border: 2px solid #013110;
   }
   .btn-gold-dark{
-    background: #e0c25e;
+    background: #ccb25c;
     color: #013110;
-    border: 2px solid #e0c25e;
+    border: 2px solid #ccb25c;
     
   }    
   .btn-light{
@@ -35,10 +35,13 @@
   }
   .btn-gold-light{
     background: transparent;
-    color: #e0c25e;
-    border: 2px solid #e0c25e;
+    color: #F6F2EC;
+    border: 2px solid #ccb25c;
   }
-
+  #star{
+    height: 10px;
+    width: 10px;
+  }
 
   /* Other Global Styles */
   #logo{
@@ -47,4 +50,8 @@
     width: 175px;
     margin: 5px;
     width: 25%;
+  }
+
+  .directions{
+    display: none;
   }
