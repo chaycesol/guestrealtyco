@@ -15,11 +15,11 @@ const FooterNav = ({ state }) => {
               <StyledLink link="/">
                 Home
               </StyledLink>
-              <StyledLink link="/owners">
+              <StyledLink link="/sub/property-owners/">
                 For Property Owners
               </StyledLink>
               <FooterLogo><a href="/"><img src={greenLogo} alt="logo"/></a></FooterLogo>
-              <StyledLink link="/renters">
+              <StyledLink link="/sub/for-renters/">
                 For Renters
               </StyledLink>
               <StyledLink link="/renters">

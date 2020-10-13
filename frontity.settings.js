@@ -55,7 +55,7 @@ const settings = {
           ],
           taxonomies: [
             {
-              taxonomy: "sub",
+              taxonomy: "subs",
               endpoint: "sub",
               postTypeEndpoint: "sub"
             }

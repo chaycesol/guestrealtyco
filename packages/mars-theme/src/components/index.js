@@ -41,9 +41,9 @@ const Theme = ({ state }) => {
       on the type of URL we are in. */}
       <Main>
         <Switch>
-          <Sub when={data.isSub} />
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
+          <Sub when={data.isSub} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
           

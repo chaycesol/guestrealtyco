@@ -2,7 +2,7 @@ import React from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
 import FooterNav from "./FooterNav";
-import instagram from "../assets/elements/instagram.svg"
+
 
 const Footer = ({ state }) => {
   return (

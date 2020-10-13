@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.1",
-  "hash": "4cc399c82bcc99b852bc",
+  "hash": "e9c2cca96977e941a031",
   "publicPath": "/static/",
   "outputPath": "/Users/chaycesolchaga/Desktop/SocialStoryCo/guestrealtyco/build/static",
   "assetsByChunkName": {
     "guestrealtyco": [
       "guestrealtyco.module.js",
-      "guestrealtyco.568ecc091edda488eccb.hot-update.js"
+      "guestrealtyco.5e1d112ac2f45e52d678.hot-update.js"
     ],
     "list": "list.module.js"
   },
   "assets": [
     {
-      "name": "568ecc091edda488eccb.hot-update.json",
+      "name": "5e1d112ac2f45e52d678.hot-update.json",
       "size": 55,
       "chunks": [],
       "chunkNames": [],
@@ -25,8 +25,8 @@
       "emitted": false
     },
     {
-      "name": "guestrealtyco.568ecc091edda488eccb.hot-update.js",
-      "size": 93387,
+      "name": "guestrealtyco.5e1d112ac2f45e52d678.hot-update.js",
+      "size": 99239,
       "chunks": [
         "guestrealtyco"
       ],
@@ -41,7 +41,7 @@
     },
     {
       "name": "guestrealtyco.module.js",
-      "size": 5300081,
+      "size": 5304085,
       "chunks": [
         "guestrealtyco"
       ],
@@ -54,14 +54,6 @@
     {
       "name": "images/greenLogo.png",
       "size": 7136,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {},
-      "emitted": false
-    },
-    {
-      "name": "images/instagram.svg",
-      "size": 1171,
       "chunks": [],
       "chunkNames": [],
       "info": {},
@@ -88,7 +80,7 @@
       ],
       "assets": [
         "guestrealtyco.module.js",
-        "guestrealtyco.568ecc091edda488eccb.hot-update.js"
+        "guestrealtyco.5e1d112ac2f45e52d678.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -101,7 +93,7 @@
       ],
       "assets": [
         "guestrealtyco.module.js",
-        "guestrealtyco.568ecc091edda488eccb.hot-update.js"
+        "guestrealtyco.5e1d112ac2f45e52d678.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

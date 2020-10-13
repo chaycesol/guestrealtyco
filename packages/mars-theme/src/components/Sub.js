@@ -246,6 +246,37 @@ const Container = styled.div`
         }
       }
     }
+    .signup{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+          color: #153211;
+          font-size: 2rem;
+        }
+        p{
+          color: #153211;
+        }
+      }
+      .signup-container{
+        display: flex;
+        form{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          border: 2px solid #153211;
+          padding: 10px;
+          font-weight: 600;
+          input{
+            background-color: #DBDBB6;
+          }
+        }
+      }
+    }
 `
 
 
