@@ -3,17 +3,12 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
-import style from "./styles/style.css";
 
 const Sub = ({ state, actions, libraries }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
   // Get the data of the post.
-  const post = state.source[data.type][data.id];
-  // Get the data of the author.
-  const author = state.source.author[post.author];
-  // Get a human readable date.
-  const date = new Date(post.date);
+  const sub = state.source[data.type][data.id];
 
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
@@ -34,32 +29,18 @@ const Sub = ({ state, actions, libraries }) => {
       <div>
         {/* <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} /> */}
         {/* Only display author and date on posts */}
-        {data.isPost && (
-          <div>
-            {author && (
-              <StyledLink link={author.link}>
-                <Author>
-                  By <b>{author.name}</b>
-                </Author>
-              </StyledLink>
-            )}
-            <DateWrapper>
-              {" "}
-              on <b>{date.toDateString()}</b>
-            </DateWrapper>
-          </div>
-        )}
+        {data.isSub}
       </div>
 
       {/* Look at the settings to see if we should include the featured image */}
       {state.theme.featured.showOnPost && (
-        <FeaturedMedia id={post.featured_media} />
+        <FeaturedMedia id={sub.featured_media} />
       )}
 
       {/* Render the content using the Html2React component so the HTML is processed
        by the processors we included in the libraries.html2react.processors array. */}
       <Content>
-        <Html2React html={post.content.rendered} />
+        <Html2React html={sub.content.rendered} />
       </Content>
     </Container>
   ) : null;

@@ -19,7 +19,7 @@ const settings = {
             ],
             [
               "About",
-              "/about/about/"
+              "/sub/about/"
             ],
             [
               "For Property Owners",
