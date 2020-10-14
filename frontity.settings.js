@@ -2,7 +2,7 @@ const settings = {
   "name": "guestrealtyco",
   "state": {
     "frontity": {
-      "url": "http://guestrealty.co",
+      "url": "https://guestrealty.co",
       "title": "Guest Realty",
       "description": "Guest Realty is a Vacation and Residential Short-Term Long-Term Property Management Sydney Bondi Beach Australia"
     }
@@ -45,7 +45,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "http://guestrealty.co/wp-json",
+          "api": "https://guestrealty.co/wp-json",
           "homepage": "/home",
           "postTypes": [
             {
