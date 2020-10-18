@@ -47,6 +47,7 @@ const settings = {
         "source": {
           "api": "https://guestrealty.co/wp-json",
           "homepage": "/home",
+          "postsPage": "/blog",
           "postTypes": [
             {
               type: "sub",
