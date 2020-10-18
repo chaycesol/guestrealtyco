@@ -4,6 +4,7 @@ import Switch from "@frontity/components/switch";
 import Header from "./header";
 import Footer from "./Footer";
 import List from "./list";
+import Page from "./Page";
 import Sub from "./Sub";
 import Post from "./post";
 import Loading from "./loading";
@@ -44,6 +45,7 @@ const Theme = ({ state }) => {
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
           <Sub when={data.isSub} />
+          <Page when={data.isPage} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
         </Switch>

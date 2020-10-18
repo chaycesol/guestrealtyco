@@ -53,13 +53,6 @@ const settings = {
               endpoint: "sub"
             }
           ],
-          taxonomies: [
-            {
-              taxonomy: "subs",
-              endpoint: "sub",
-              postTypeEndpoint: "sub"
-            }
-          ]
         }
       }
     },
