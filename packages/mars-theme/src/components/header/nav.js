@@ -23,8 +23,8 @@ const Nav = ({ state }) => (
         </NavItem>
       );
     })}
-    <button className="button btn-light">Call Us</button>
-    <button className="button btn-dark">Book Now</button>
+    <a href="tel:+610280956240"><button className="nav-button btn-light">Call Us</button></a>
+    <a href="/sub/for-renters/"><button className="nav-button btn-dark">Book Now</button></a>
   </NavContainer>
 );
 

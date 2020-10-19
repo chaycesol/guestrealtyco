@@ -69,12 +69,19 @@ const Container = styled.div`
     flex-direction: column;
   }
   .hero-img{
-    height: 900px;
+    height: 800px;
     width: 50%;
     overflow: hidden;
-    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/1600/900");
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/1600/900"); /* The least supported option. */
+    background: #C33764;  
+    /* fallback colour. Make sure this is just one solid colour. */
+    img{
+      position: relative;
+      margin-top: -25px;
+      height: 850px;
+      /* width: auto; */
+    }
+    /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/1600/900");
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/1600/900"); The least supported option. */
   }
   .hero-header{
     font-style: normal;

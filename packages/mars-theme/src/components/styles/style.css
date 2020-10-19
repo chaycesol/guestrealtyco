@@ -27,7 +27,13 @@ h4{
     border-radius: 6px;
     margin: 10px;
     font-weight: 600;
-    
+  }
+  .nav-button{
+    height: 52px;
+    width: 75px;
+    border-radius: 6px;
+    margin: 10px;
+    font-weight: 600;
   }
   .btn-dark{
     background: #013110;
