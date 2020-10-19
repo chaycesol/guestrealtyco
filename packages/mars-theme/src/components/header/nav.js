@@ -42,7 +42,7 @@ const NavContainer = styled.nav`
   margin: 0;
   overflow-x: auto;
 
-  @media screen and (max-width: 880px) {
+  @media screen and (max-width: 950px) {
     display: none;
   }
 `;

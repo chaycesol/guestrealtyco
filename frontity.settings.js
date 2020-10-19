@@ -63,7 +63,8 @@ const settings = {
             },
             {
               type: "property",
-              endpoint: "property"
+              endpoint: "property",
+              archive: "/property-list"
             }
           ],
         }
