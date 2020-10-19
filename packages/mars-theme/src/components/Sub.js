@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
+import Contact from "./Contact";
 
 const Sub = ({ state, actions, libraries }) => {
   // Get information about the current URL.
@@ -41,6 +42,9 @@ const Sub = ({ state, actions, libraries }) => {
        by the processors we included in the libraries.html2react.processors array. */}
       <Content>
         <Html2React html={sub.content.rendered} />
+        <ContactContainer>
+          <Contact/>
+        </ContactContainer>
       </Content>
     </Container>
   ) : null;
@@ -72,7 +76,7 @@ const Container = styled.div`
     height: 800px;
     width: 50%;
     overflow: hidden;
-    background: #C33764;  
+    background: #f6f2ec;  
     /* fallback colour. Make sure this is just one solid colour. */
     img{
       position: relative;
@@ -267,23 +271,13 @@ const Container = styled.div`
     }
 `
 
-
-
-const StyledLink = styled(Link)`
-  padding: 15px 0;
-`;
-
-const Author = styled.p`
-  color: rgba(12, 17, 43, 0.9);
-  font-size: 0.9em;
-  display: inline;
-`;
-
-const DateWrapper = styled.p`
-  color: rgba(12, 17, 43, 0.9);
-  font-size: 0.9em;
-  display: inline;
-`;
+const ContactContainer = styled.div`
+  border: 2px solid #153211;
+  background-color: #153211;
+  width: 100%;
+  padding: 10px;
+  align-content: center;
+`
 
 /**
  * This component is the parent of the `content.rendered` HTML. We can use nested
@@ -335,7 +329,9 @@ const Content = styled.div`
   }
 
   /* Input fields styles */
-
+  label {
+    color: #ccb25c;
+  }
   input[type="text"],
   input[type="email"],
   input[type="url"],
@@ -349,7 +345,7 @@ const Content = styled.div`
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: #153211;
     background-color: #f6f2ec;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -359,7 +355,7 @@ const Content = styled.div`
     margin: 8px 0 4px 0;
 
     &:focus {
-      outline-color: #1f38c5;
+      outline-color: #153211;
     }
   }
 
@@ -374,13 +370,13 @@ const Content = styled.div`
     touch-action: manipulation;
     cursor: pointer;
     background-image: none;
-    border: 1px solid #1f38c5;
-    padding: 12px 36px;
+    background-color: #153211;
+    border: 1px solid #153211;
     font-size: 14px;
     line-height: 1.42857143;
     border-radius: 4px;
-    color: #fff;
-    background-color: #1f38c5;
+    color: #153211;
+    background-color: #f6f2ec;
   }
 
   /* WordPress Core Align Classes */
