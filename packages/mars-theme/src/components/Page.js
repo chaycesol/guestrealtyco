@@ -3,6 +3,7 @@ import { connect, styled } from "frontity";
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
+import homeHero from "../assets/elements/homeHero.gif"
 
 const Post = ({ state, actions, libraries }) => {
   // Get information about the current URL.
@@ -91,8 +92,10 @@ const Container = styled.div`
     width: 100vw;
     overflow: hidden;
     background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/1600/900");
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(21, 50, 17, 0.8)), url("https://picsum.photos/1600/900"); /* The least supported option. */
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.3), rgba(21, 50, 17, 0.3)), url(${homeHero});
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(21, 50, 17, 0.3)), url(${homeHero}); /* The least supported option. */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     }
     img {
       object-fit: cover;

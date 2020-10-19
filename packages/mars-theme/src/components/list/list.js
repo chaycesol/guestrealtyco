@@ -38,14 +38,23 @@ const List = ({ state }) => {
 export default connect(List);
 
 const Container = styled.section`
-  width: 800px;
+  width: 100%;
   margin: 0;
   padding: 24px;
   list-style: none;
+  background-color: #153211;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Header = styled.h3`
   font-weight: 300;
   text-transform: capitalize;
-  color: rgba(12, 17, 43, 0.9);
+  color: #ccb25c;
+  font-size: 2.5rem;
+  border: 2px solid #ccb25c;
+  padding: 20px;
+  border-radius: 20px;
+
 `;
