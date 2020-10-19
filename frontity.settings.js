@@ -35,7 +35,15 @@ const settings = {
             ]
           ],
           "featured": {
-            "showOnList": false,
+            "showOnList": true,
+            "showOnPost": true
+          },
+          "postInfo": {
+            "showOnList": true,
+            "showOnPost": true
+          },
+          "postMeta": {
+            "showOnList": true,
             "showOnPost": false
           }
         }
